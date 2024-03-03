@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic Examples</title>
+    <link rel="stylesheet" href="/HTML Tutorial/styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a href="/CBSCU4CSE23560/index.html">My Portfolio</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="/HTML Tutorial/index.html">HTML Home</a></li>
+                <li><a href="/HTML Tutorial/intro.html">HTML Introduction</a></li>
+                <li><a href="/HTML Tutorial/basic.html" class="active">HTML Basic</a></li>
+                <li><a href="/HTML Tutorial/elements.html">HTML Elements</a></li>
+                <li><a href="/HTML Tutorial/attributes.html">HTML Attributes</a></li>
+                <li><a href="/HTML Tutorial/headings.html">HTML Headings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>HTML Basic Examples</h1>
+            <p>This chapter covers some basic html examples.<br><br>
+                Don't worry if you don't know any of the tags. This is just to give an idea of structure of a html document.
+            </p>
+            <hr>
+            <h2>HTML Documents</h2>
+            <p>
+                All HTML documents must start with a document type declaration: <span style="color: red; background-color: rgba(100,100,100,0.5);">&lt!DOCTYPE html&gt</span>.<br><br>
+
+        The HTML document itself begins with <span style="color: red; background-color: rgba(100,100,100,0.5);">&lthtml&gt</span> and ends with <span style="color: red; background-color: rgba(100,100,100,0.5);">&lt/html&gt</span>.<br><br>
+
+        The visible part of the HTML document is between <span style="color: red; background-color: rgba(100,100,100,0.5);">&ltbody&gt</span> and <span style="color: red; background-color: rgba(100,100,100,0.5);">&lt/body&gt</span>.
+            </p>
+            <div style="background-color: rgb(38, 37, 37); padding: 12px; border-radius: 7px;">
+                <h2>Example</h2>
+                <p style="border: 2px solid rgb(8, 240, 8); background-color: aliceblue; color: black;">
+                    &lt!DOCTYPE html&gt<br>
+                    &lthtml&gt<br>
+                    &ltbody&gt<br>
+
+                    &lth1&gtMy First Heading&lt/h1&gt<br>
+                    &ltp&gtMy first paragraph.&lt/p&gt<br>
+
+                    &lt/body&gt<br>
+                    &lt/html&gt<br>
+                </p>
+                <button style="background-color: rgb(5, 203, 5); color: white; padding: 12px; border-radius: 8px"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>The &lt!DOCTYPE&gt declaration</h2>
+            <p>
+                The &lt!DOCTYPE&gt declaration represents the document type, and helps browsers to display web pages correctly.<br><br>
+
+                It must only appear once, at the top of the page (before any HTML tags).<br><br>
+
+                The &lt!DOCTYPE&gt declaration is not case sensitive.<br><br>
+
+                The &lt!DOCTYPE&gt declaration for HTML5 is:
+            </p>
+            <div style="background-color: rgb(38, 37, 37); padding: 12px; border-radius: 7px;">
+                <p style="background-color: black; padding:5px; border-left:5px solid grey">
+                    <span style="color:aquamarine">&lt</span><span style="color:red">!DOCTYPE</span> <span style="color:rgb(240, 10, 240)">html</span><span style="color:aquamarine">&gt</span>
+                </p>
+            </div>
+            <hr>
+            <h2>HTML Headings</h2>
+            <p>HTML headings are defined with the <span class="specifytag">&lth1&gt</span> to <span class="specifytag">&lth6&gt</span> tags.</p>
+            <p><span class="specifytag">&lth1&gt</span> defines the most important heading. <span class="specifytag">&lth6&gt</span> defines the least important heading:</p>
+            <div class="example">
+                <h2>Example</h2>
+                <p class="inex">
+                    &lth1&gtThis is heading 1&lt/h1&gt<br>
+                    &lth2>This is heading 2&lt/h2><br>
+                    &lth3>This is heading 3&lt/h3><br>
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_headings" class="try">Try it yourself&gt&gt</a></button>
+            </div>
+            <hr>
+            <hr>
+            <h2>HTML paragraphs</h2>
+            <p>HTML paragraphs are defined within <span class="specifytag">&ltp&gt</span> tag:</p>
+            <div class="example">
+                <h2>Example</h2>
+                <p class="inex">
+                    &ltp&gtThis is a paragraph&lt/p&gt<br>
+                    &ltp>This is another paragraph&lt/p><br>
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_paragraphs" class="try">Try it yourself&gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>HTML Links</h2>
+            <p>HTML links are defined with the <span class="specifytag">&lta></span>:</p>
+            <div class="example">
+                <h2>Example</h2>
+                <p class="inex">
+                    &lta href="https://www.w3schools.com">This is a link&lt/a>
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link" class="try">Try it yourself&gt&gt</a></button>
+            </div>
+            <p>The link's destination is specified in the href attribute. The value of the href should be URL of the destination</p>
+            <hr>
+            <h2>HTML Images</h2>
+            <p>HTML images are defined with the <span class="specifytag">&ltimg></span> tag</p>
+            <div class="example">
+                <h2>Example</h2>
+                <p class="inex">
+                    &ltimg src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_img" class="try">Try it yourself&gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>How to View HTML Source</h2>
+            <p>Have you ever seen a Web page and wondered "Hey! How did they do that?"</p>
+
+            <h2>View HTML Source Code:</h2>
+            <p>Click CTRL + U in an HTML page, or right-click on the page and select "View Page Source". This will open a new tab containing the HTML source code of the page.</p>
+
+            <h2>Inspect an HTML Element:</h2>
+            <p>Right-click on an element (or a blank area), and choose "Inspect" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+            <div style="display: inline-flex;">
+                <button class="prevnext"><a href="/HTML Tutorial/intro.html" class="navdec" style="float: left;">&ltPrevious</a></button>
+                <button class="prevnext" style="margin-left:960px"><a href="/HTML Tutorial/elements.html" class="navdec">Next></a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

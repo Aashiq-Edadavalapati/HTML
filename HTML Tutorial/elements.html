@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements    </title>
+    <link rel="stylesheet" href="/HTML Tutorial/styles.css">
+    <style>
+        tr{
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a href="/CBSCU4CSE23560/index.html">My Portfolio</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="/HTML Tutorial/index.html">HTML Home</a></li>
+                <li><a href="/HTML Tutorial/intro.html">HTML Introduction</a></li>
+                <li><a href="/HTML Tutorial/basic.html">HTML Basic</a></li>
+                <li><a href="/HTML Tutorial/elements.html" class="active">HTML Elements</a></li>
+                <li><a href="/HTML Tutorial/attributes.html">HTML Attributes</a></li>
+                <li><a href="/HTML Tutorial/headings.html">HTML Headings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>HTML Elements</h1>
+            <div style="display: inline-flex;">
+                <button class="prevnext" style="margin-left: 10px;"><a href="/HTML Tutorial/basic.html" class="navdec" style="float: left;">&ltPrevious</a></button>
+                <button class="prevnext" style="margin-left:870px"><a href="/HTML Tutorial/attributes.html" class="navdec">Next></a></button>
+            </div>
+            <hr>
+            <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+            <hr>
+            <h2>HTML Elements</h2>
+            <p><span class="specifytag">&lttagname></span>Content goes here...<span class="specifytag">&lt/tagname></span></p>
+            <p>Examples of some HTML elements:</p>
+            <p><span class="specifytag">&lt</span>h1>My First Heading<span>&lt/h1></span></p>
+            <p><span class="specifytag">&ltp></span>My first paragraph.<span class="specifytag">&lt/p></span></p>
+            <table class="extable">
+                <tr style="background-color: #15202B;">
+                    <th>Start tag</th>
+                    <th>Element content</th>
+                    <th>End tag</th>
+                </tr>
+                <tr style="background-color: #38444D;">
+                    <td class="extd">&lth1></td>
+                    <td class="extd">My First Heading</td>
+                    <td class="extd">&lt/h1></td>
+                </tr>
+                <tr style="background-color: #15202B;">
+                    <td class="extd">&ltp></td>
+                    <td class="extd">My First Paragraph</td>
+                    <td class="extd">&lt/p></td>
+                </tr>
+                <tr style="background-color: #38444D;">
+                    <td class="extd">&ltbr></td>
+                    <td class="extd">none</td>
+                    <td class="extd">none</td>
+                </tr>
+            </table>
+            <div style="background-color: #FFF4A3; color: black;">
+                <p style="padding: 30px;"><b>Note:</b> Some HTML elements have no content (like the &ltbr> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+            </div>
+            <hr>
+            <h2>Nested HTML Elements</h2>
+            <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+            <p>All HTML documents consist of nested HTML elements.</p>
+            <p>The following example contains four HTML elements (<span class="specifytag">&lthtml></span>, <span class="specifytag">&ltbody></span>, <span class="specifytag">&lth1></span> and <span class="specifytag">&ltp></span>):</p>
+            <div class="example">
+                <h2>Example</h2>
+                <p class="inex">
+                    &lt!DOCTYPE html&gt<br>
+                    &lthtml&gt<br>
+                    &ltbody&gt<br>
+
+                    &lth1&gtMy First Heading&lt/h1&gt<br>
+                    &ltp&gtMy first paragraph.&lt/p&gt<br>
+
+                    &lt/body&gt<br>
+                    &lt/html&gt<br>
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <h3>Example explained</h3>
+            <p>The <span class="specifytag">&lthtml></span> element is the root element and it defines the whole HTML document.</p>
+
+            <p>It has a start tag <span class="specifytag">&lthtml></span> and an end tag <span class="specifytag">&lt/html></span>.</p>
+
+            <p>Then, inside the <span class="specifytag">&lthtml></span> element there is a <span class="specifytag">&ltbody></span> element:</p>
+            <div class="example">
+                    <p class="inex">
+                        <span class="specifytag">&ltbody></span><br><br>
+                        <span class="specifytag">&lth1></span>My First Heading<span class="specifytag">&lt/h1></span><br><br>
+                        <span class="specifytag">&ltp></span>My first paragraph.<span class="specifytag">&lt/p></span><br><br>
+                        <span class="specifytag">&lt/body></span>
+                    </p>
+            </div>
+            <p>
+                The <span class="specifytag">&ltbody></span> element defines the document's body.<br>
+
+                It has a start tag <span class="specifytag">&ltbody></span> and an end tag <span class="specifytag">&lt/body></span>.<br>
+                    
+                Then, inside the <span class="specifytag">&ltbody></span> element there are two other elements: <span class="specifytag">&lth1></span> and <span class="specifytag">&ltp></span>:
+            </p>
+            <div class="example">
+                <p class="inex">
+                    <span class="specifytag">&lth1></span>My First Heading<span class="specifytag">&lt/h1></span><br><br>
+                    <span class="specifytag">&ltp></span>My first paragraph.<span class="specifytag">&lt/p></span>
+                </p>
+            </div>
+            <p>The <span class="specifytag">&lth1></span> tag defines a heading</p>
+            <p>It has a start tag <span class="specifytag">&lth1></span> and an end tag <span class="specifytag">&lt/h1></span>:</p>
+            <div class="example">
+                <p class="inex">
+                    <span class="specifytag">&lth1></span>My First Heading<span class="specifytag">&lt/h1></span>
+                </p>
+            </div>
+            <p>The <span class="specifytag">&ltp></span> tag defines a paragraph</p>
+            <p>It has a start tag <span class="specifytag">&ltp></span> and an end tag <span class="specifytag">&lt/p></span>:</p>
+            <div class="example">
+                <p class="inex">
+                    <span class="specifytag">&ltp></span>My First Paragraph<span class="specifytag">&lt/p></span>
+                </p>
+            </div>
+            <hr><hr>
+            <h2>Never skip the end tag</h2>
+            <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+            <div class="example">
+                <h2>Example</h2>
+                <p class="inex">
+                    &lthtml&gt<br>
+                    &ltbody&gt<br>
+
+                    &lth1&gtMy First Heading<br>
+                    &ltp&gtMy first paragraph.<br>
+
+                    &lt/body&gt<br>
+                    &lt/html&gt
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <p><b>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</b></p>
+            <hr>
+            <h2>Empty HTML Elements</h2>
+            <p>HTML elements with no content are called empty elements.<br><br>
+
+                The &ltbr> tag defines a line break, and is an empty element without a closing tag:</p>
+            <div class="example">
+                <p class="inex">
+                    &ltp>This is a &ltbr> paragraph with a line break.&lt/p>
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br" class="try" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>HTML is not case sensitive</h2>
+            <p>HTML tags are not case sensitive: &ltP> means the same as &ltp>.</p>
+            <p>The HTML standard does not require lowercase tags, but it is recommended to use lowercase in HTML, and demand lowercase for stricter document types like XHTML.</p>
+            <button class="prevnext"><a href="/HTML Tutorial/basic.html" class="navdec" style="float: left;">&ltPrevious</a></button>
+                <button class="prevnext" style="margin-left:960px"><a href="/HTML Tutorial/attributes.html" class="navdec">Next></a></button>
+        </div>           
+    </div>
+</body>
+</html>
