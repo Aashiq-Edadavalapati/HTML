@@ -128,7 +128,79 @@
             <p>Country codes can also be added to the language code in the <span class="specifytag">lang</span> attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</p>
             <p>The following example specifies English as the language and United States as the country:</p>
             <div class="example">
+                <p class="inex">
+                    &lt!DOCTYPE html><br>
+                    &lthtml lang="en-US"><br>
+                    &ltbody><br>
+                    ...<br>
+                    &lt/body><br>
+                    &lt/html>
+                </p>
+            </div>
+            <p>You can see all the language codes in <a href="/HTML Tutorial/HTML Language Code Reference.html" id="hi">HTML Language Code Reference.</a></p>
+            <hr>
+            <h2>The title Attribute</h2>
+            <p>The title attribute defines some extra information about an element.</p>
+            <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p class="inex">
+                &ltp title="I'm a tooltip">This is a paragraph.&lt/p>
+                </p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>We Suggest: Always Use Lowercase Attributes</h2>
+            <p>The HTML standard does not require lowercase attribute names.</p>
 
+            <p>The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.</p>
+                
+            <p>However, we recommend lowercase attributes in HTML, and demand lowercase attributes for stricter document types like XHTML.</p>
+            <hr>
+            <h2>We Suggest: Always Quote Attribute Values</h2>
+            <p>The HTML standard does not require quotes around attribute values.</p>
+            <p>However, we recommend quotes in HTML, and demand quotes for stricter document types like XHTML.</p>
+            <div class="example">
+                <h3>Good:</h3>
+                <p class="inex">&lta href="https://www.w3schools.com/html/">Visit our HTML tutorial&lt/a></p>
+            </div>
+            <div class="example">
+                <h3>Bad:</h3>
+                <p class="inex">&lta href=https://www.w3schools.com/html/>Visit our HTML tutorial&lt/a></p>
+            </div>
+            <p>Sometimes you have to use quotes. This example will not display the title attribute correctly, because it contains a space:</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p class="inex">&ltp title=About W3Schools></p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_error" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>Single or Double Quotes?</h2>
+            <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p>
+            <p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+            <div class="example">
+                <p class="inex">&ltp title='John "ShotGun" Nelson'></p>
+            </div>
+            <p>Or vice versa:</p>
+            <div class="example">
+                <p class="inex">&ltp title="John 'ShotGun' Nelson"></p>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_single_double" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>Chapter Summary</h2>
+            <ul>
+                <li>All HTML elements can have <b>attributes</b></li>
+                <li>The href attribute of <span class="specifytag">&lta></span> specifies the URL of the page the link goes to</li>
+                <li>The src attribute of <span class="specifytag">&ltimg></span> specifies the path to the image to be displayed</li>
+                <li>The width and height attributes of <span class="specifytag">&ltimg></span> provide size information for images</li>
+                <li>The alt attribute of <span class="specifytag">&ltimg></span> provides an alternate text for an image</li>
+                <li>The style attribute is used to add styles to an element, such as color, font, size, and more</li>
+                <li>The lang attribute of the <span class="specifytag">&lthtml></span> tag declares the language of the Web page</li>
+                <li>The title attribute defines some extra information about an element</li>
+            </ul>
+            <div style="display: inline-flex;">
+                <button class="prevnext" style="margin-left: 10px;"><a href="/HTML Tutorial/elements.html" class="navdec" style="float: left;">&ltPrevious</a></button>
+                <button class="prevnext" style="margin-left:870px"><a href="/HTML Tutorial/headings.html" class="navdec">Next></a></button>
             </div>
         </div>
     </div>
