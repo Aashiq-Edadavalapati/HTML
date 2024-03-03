@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(60, 60, 60); color: whitesmoke;
+}
+
+.indem{
+    background-color: black;
+    padding:5px;
+    border-left:5px solid grey;
+}
+
+.note{
+    background-color: #FFF4A3; padding: 30px; color: black;
+}
+
+.specifytag{
+    color: #FF9999;
+    background-color: #DEDEDE1A;
+}
+
+.example{
+    background-color: #38444D;
+    padding: 8px 20px;
+    border-radius: 7px;
+}
+
+.inex{
+    padding: 8px 12px;
+    background-color: #1D2A35;
+    color: white;
+    border-left: 5px solid rgb(41, 39, 39);
+}
+
+.try{
+    background-color: #04AA6D;
+    text-decoration: none; 
+    color: white;
+}
+
+.container{
+    display: flex;
+    margin-top: 40px;
+}
+
+.navigation{
+    float: left;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    top: 40px;
+    z-index: 1;
+    background-color: #15202B;
+}
+
+.content{
+    margin-left: 15%;
+    padding: 15px;
+    background-color: #1D2A35;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+}
+
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+}
+
+.navigation li a:hover:not(.active) {
+    background-color: #ece8e8;
+    color: black;
+}
+
+.navigation li a.active{
+    background-color: #04AA6D;
+}
+
+.topnav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav li{
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.topnav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.topnav .active {
+    background-color: #04AA6D;
+}
+
+.prevnext{
+    background-color: #04AA6D; color: white; padding: 8px 19px; border-radius: 8px; font-size: 18px; font-family: Source Sans pro;
+}
+
+.navdec{
+    text-decoration: none; color: white;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.extable{    
+    width:100%;
+    background-color: rgb(43, 43, 41);
+    border-collapse: collapse;
+}
+
+.extd{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+hr{
+    background-color: rgb(200,200,200);
+}
+
+.try{
+    background-color: rgb(5, 203, 5); color: white; padding: 12px; border-radius: 8px;
+}
