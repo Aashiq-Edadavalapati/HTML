@@ -16,6 +16,7 @@ body{
 .specifytag{
     color: #FF9999;
     background-color: #DEDEDE1A;
+    font: 15px Verdana,Sans-serif;
 }
 
 .example{
@@ -126,15 +127,15 @@ body{
 }
 
 h1{
-    font-size: 50px;
+    font: 42px "Segoe UI",Arial,sans-serif;
 }
 
 h2{
-    font-size: 30px;
+    font: 32px "Segoe UI",Arial,sans-serif;
 }
 
 h3{
-    font-size: 20px;
+    font: 24px "Segoe UI",Arial,sans-serif;
 }
 
 .extable{    
@@ -153,5 +154,22 @@ hr{
 }
 
 .try{
-    background-color: rgb(5, 203, 5); color: white; padding: 12px; border-radius: 8px;
+    text-decoration: none;
+    font: 17px "Source Sans Pro",sans-serif;
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 18px;
+    margin: 0 0 16px;
+    border-radius: 8px;
+}
+
+p,li,span{
+    font: 15px Verdana,Sans-serif;
+}
+
+#hi{
+    color: white;
+}
+#hi:hover{
+    color: green;
 }
