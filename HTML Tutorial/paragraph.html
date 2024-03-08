@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Paragraphs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a href="index.html">My Portfolio</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">HTML Home</a></li>
+                <li><a href="intro.html">HTML Introduction</a></li>
+                <li><a href="basic.html">HTML Basic</a></li>
+                <li><a href="elements.html">HTML Elements</a></li>
+                <li><a href="attributes.html">HTML Attributes</a></li>
+                <li><a href="headings.html">HTML Headings</a></li>
+                <li><a href="paragraphs.html" class="active">HTML Paragraphs</a></li>
+                <li><a href="HTML Styles.html">HTML Styles</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>HTML Paragraphs</h1>
+            <div style="display: inline-flex;">
+                <button class="prevnext" style="margin-left: 10px;"><a href="headings.html" class="navdec" style="float: left;">&ltPrevious</a></button>
+                <button class="prevnext" style="margin-left:870px"><a href="HTML Styles.html" class="navdec">Next></a></button>
+            </div>
+            <hr>
+            <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+            <hr>
+            <h2>HTML Paragraphs</h2>
+            <p>The HTML <span class="specifytag">&ltp></span> element defines a paragraph.</p>
+            <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+            <div class="example">
+                <div class="inex">
+                    <p>
+                        &ltp>This is a paragraph.&lt/p><br>
+                        &ltp>This is another paragraph.&lt/p>
+                    </p>
+                </div>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>HTML Display</h2>
+            <p>
+                You cannot be sure how HTML will be displayed.<br>
+                Large or small screens, and resized windows will create different results.<br>
+                With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.<br>
+                The browser will automatically remove any extra spaces and lines when the page is displayed:
+            </p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <pre>
+                        &ltp>
+                        This paragraph
+                        contains a lot of lines
+                        in the source code,
+                        but the browser
+                        ignores it.
+                        &lt/p>
+                        &ltp>
+                        This paragraph
+                        contains         a lot of spaces
+                        in the source         code,
+                        but the        browser
+                        ignores it.
+                        &lt/p>
+                    </pre>
+                </div>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <hr>
+            <h2>HTML Horizontal Rules</h2>
+            <p>The <span class="specifytag">&lthr></span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.<br>
+
+                The <span class="specifytag">&lthr></span> element is used to separate content (or define a change) in an HTML page:</p>
+            <div class="example">
+                <div class="inex">
+                    <pre>
+                        &lth1>This is heading 1&lt/h1>
+                        &ltp>This is some text.&lt/p>
+                        &lthr>
+                        &lth2>This is heading 2&lt/h2>
+                        &ltp>This is some other text.&lt/p>
+                        &lthr>
+                    </pre>
+                </div>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_hr" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <p>The <span class="specifytag">&lthr></span> tag is an empty tag(self-closing), which means that it has no end tag.</p>
+            <hr>
+            <h2>HTML Line Breaks</h2>
+            <p>The HTML <span class="specifytag">&ltbr></span> element defines a line break.</p>
+            <p>Use <span class="specifytag">&ltbr></span> if you want a line break (a new line) without starting a new paragraph:</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p><p>This is <span class="specifytag">&ltbr></span> a paragraph <span class="specifytag">&ltbr></span> with line breaks.</p></p>
+                </div>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <p>The <span class="specifytag">&ltbr></span> tag is an empty tag, which means that it has no end tag.</p>
+            <hr>
+            <h2>The Poem Problem</h2>
+            <p>This poem will display in single line</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p>&ltp>
+                        My Bonnie lies over the ocean.<br><br>
+                      
+                        My Bonnie lies over the sea.<br><br>
+                      
+                        My Bonnie lies over the ocean.<br><br>
+                      
+                        Oh, bring back my Bonnie to me.<br><br>
+                      &lt/p></p>
+                </div>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <hr>
+            <h2>Solution - The HTML &ltpre> Element</h2>
+            <p>The HTML <span class="specifytag">&ltpre></span> element defines preformatted text.</p>
+            <p>The text inside a <span class="specifytag">&ltpre></span> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <pre>
+                        &ltpre>
+                            My Bonnie lies over the ocean.
+                          
+                            My Bonnie lies over the sea.
+                          
+                            My Bonnie lies over the ocean.
+                          
+                            Oh, bring back my Bonnie to me.
+                        &lt/pre>
+                    </pre>
+                </div>
+                <button class="try"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre" style="text-decoration: none; color: white;" target="_blank">Try it yourself &gt&gt</a></button>
+            </div>
+            <div style="display: inline-flex;">
+                <button class="prevnext" style="margin-left: 10px;"><a href="headings.html" class="navdec" style="float: left;">&ltPrevious</a></button>
+                <button class="prevnext" style="margin-left:870px"><a href="HTML Styles.html" class="navdec">Next></a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
