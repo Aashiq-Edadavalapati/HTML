@@ -146,7 +146,15 @@ h3{
     border-collapse: collapse;
 }
 
-.extd{
+.extable tr{
+    height: 40px;
+}
+
+.extable tr:nth-child(even){
+    background-color: #38444D;
+}
+
+.extable td,th{
     text-align: center;
     border-collapse: collapse;
 }
