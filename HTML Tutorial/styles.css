@@ -24,6 +24,7 @@ body{
     background-color: #38444D;
     padding: 8px 20px;
     border-radius: 7px;
+    margin: 20px;
 }
 
 .inex{
@@ -33,7 +34,12 @@ body{
     border-left: 5px solid rgb(41, 39, 39);
 }
 
+.inex p,pre{
+    margin: 0;
+}
+
 .try{
+    margin-top: 20px;
     background-color: #04AA6D;
     text-decoration: none; 
     color: white;
@@ -160,7 +166,7 @@ h3{
 }
 
 hr{
-    background-color: rgb(200,200,200);
+    border-color: rgb(200,200,200);
 }
 
 .try{
