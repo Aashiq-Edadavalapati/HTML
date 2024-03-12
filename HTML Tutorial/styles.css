@@ -76,6 +76,9 @@ body{
     width: 200px;
 }
 
+.navin li{
+    margin-left: 20px;
+}
 
 .navigation a{
     color: white;
