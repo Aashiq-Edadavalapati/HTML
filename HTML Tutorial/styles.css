@@ -76,6 +76,10 @@ body{
     width: 200px;
 }
 
+.navin{
+    display: none;
+}
+
 .navin li{
     margin-left: 20px;
 }
