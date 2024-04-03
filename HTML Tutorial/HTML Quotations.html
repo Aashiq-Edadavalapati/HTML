@@ -109,6 +109,135 @@
             </ul>
         </div>
         <div class="content">
+            <h1>HTML Quotation and Citation Elements</h1>
+            <div style="display: inline-flex;">
+                <a href="HTML Formatting.html" class="prevnext" style="margin-left: 10px;">&ltPrevious</a>
+                <a href="HTML Comments.html" class="prevnext" style="margin-left:770px">Next></a>
+            </div>
+            <hr>
+            <p>In this chapter we will go through the <span class="specifytag">&ltblockquote></span>,<span class="specifytag">&ltq></span>, <span class="specifytag">&ltabbr></span>, <span class="specifytag">&ltaddress></span>, <span class="specifytag">&ltcite></span>, and <span class="specifytag">&ltbdo></span> HTML elements.</p>
+            <hr>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p>Here is a quote from WWF's website:
+                        <blockquote>For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.</blockquote></p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro2" class="try" target="_blank">Try it Yourself &gt&gt</a>
+            </div>
+            <hr>
+            <h2>HTML &ltblockquote> for Quotations</h2>
+            <p>The HTML <span class="specifytag">&ltblockquote></span> element defines a section that is quoted from another source.
+            <p>Browsers usually indent <span class="specifytag">&ltblockquote></span> elements.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p>&ltp>Here is a quote from WWF's website:&lt/p><br>
+                    &ltblockquote cite="http://www.worldwildlife.org/who/index.html">
+                    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+                    &l/blockquote></p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_blockquote" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <h2>HTML &ltq> for Short Quotations</h2>
+            <p>The HTML <span class="specifytag">&ltq></span> tag defines a short quotation.</p>
+            <p>Browsers normally insert quotation marks around the quotation.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p>&ltp>WWF's goal is to: &ltq>Build a future where people live in harmony with nature.&lt/q>&lt/p></p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_q" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr><hr>
+            <h2>HTML &ltabbr> for Abbreviations</h2>
+            <p>The HTML <span class="specifytag">&ltabbr></span> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+            <p>Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+            <p>Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. </p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p>&ltp>The &ltabbr title="World Health Organization">WHO&lt/abbr> was founded in 1948.&lt/p></p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_abbr" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <h2>HTML &ltaddress> for Contact Information</h2>
+            <p>The HTML <span class="specifytag">&ltaddress></span> tag defines the contact information for the author/owner of a document or an article.</p>
+            <p>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</p>
+            <p>The text in the <span class="specifytag">&ltaddress></span> element usually renders in italic, and browsers will always add a line break before and after the <span class="specifytag">&ltaddress></span> element.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    &ltaddress><br>
+                    Written by John Doe.&ltbr><br>
+                    Visit us at:&ltbr><br>
+                    Example.com&ltbr><br>
+                    Box 564, Disneyland&ltbr><br>
+                    USA<br>
+                    &lt/address>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_address" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <h2>HTML &ltcite> for Work Title</h2>
+            <p>The HTML <span class="specifytag">&ltcite></span> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
+            <p>Note: A person's name is not the title of a work.</p>
+            <p>The text in the <span class="specifytag">&ltcite></span> element usually renders in <i>italic</i>.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p>&ltp>&ltcite>The Scream&lt/cite> by Edvard Munch. Painted in 1893.&lt/p></p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_cite" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <h2>HTML &ltbdo> for Bi-Directional Override</h2>
+            <p>BDO stands for Bi-Directional Override.</p>
+            <p>The HTML &ltbdo> tag is used to override the current text direction:</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    <p>&ltbdo dir="rtl">This text will be written from right to left&lt/bdo></p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_bdo" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <table class="extable">
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&ltabbr></td>
+                    <td>Defines an abbreviation or acronym</td>
+                </tr>
+                <tr>
+                    <td>&ltaddress></td>
+                    <td>Defines contact information for the author/owner of a document</td>
+                </tr>
+                <tr>
+                    <td>&ltbdo></td>
+                    <td>Defines the text direction</td>
+                </tr>
+                <tr>
+                    <td>&ltblockquote></td>
+                    <td>Defines asection that is quoted from another source</td>
+                </tr>
+                <tr>
+                    <td>&ltcite></td>
+                    <td>Defines the title of a work</td>
+                </tr>
+                <tr>
+                    <td>&ltq></td>
+                    <td>Defines a short inline quotation</td>
+                </tr>
+            </table>
+            <div style="display: inline-flex;">
+                <a href="HTML Formatting.html" class="prevnext" style="margin-left: 10px;">&ltPrevious</a>
+                <a href="HTML Comments.html" class="prevnext" style="margin-left:770px">Next></a>
+            </div>
         </div>
     </div>
 </body>
