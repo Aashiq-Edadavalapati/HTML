@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Colors</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #colors > div{
+            width: calc(25% - 10px);
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        #colors > div > p{
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            #colors > div {
+                width: calc(50% - 10px); /* 50% width for each box on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="topnav">
@@ -109,7 +125,117 @@
             </ul>
         </div>
         <div class="content">
+            <h1>HTML Colors</h1>
+            <div style="display: inline-flex;">
+                <a href="HTML Comments.html" class="prevnext" style="margin-left: 10px;">&ltPrevious</a>
+                <a href="RGB.html" class="prevnext" style="margin-left:770px">Next></a>
+            </div>
+            <hr>
+            <p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+            <hr>
+            <h2>Color Names</h2>
+            <p>In HTML, color can be specified by using a color name:</p>
+            <div style="display: flex;flex-wrap: wrap; justify-content: space-around;" id="colors">
+                <div style="text-align: center; background-color: tomato;">
+                    <p style="vertical-align: middle;">Tomato</p>
+                </div>
+                <div style="text-align: center; background-color: orange; ">
+                    <p>Orange</p>
+                </div>
+                <div style="text-align: center; background-color: dodgerblue; ">
+                    <p>DodgerBlue</p>
+                </div>
+                <div style="text-align: center; background-color: mediumseagreen; ">
+                    <p>MediumSeaGreen</p>
+                </div>
+                <div style="text-align: center; background-color: gray; ">
+                    <p>Gray</p>
+                </div>
+                <div style="text-align: center; background-color: slateblue; ">
+                    <p>SlateBlue</p>
+                </div>
+                <div style="text-align: center; background-color: violet; ">
+                    <p>Violet</p>
+                </div>
+                <div style="text-align: center; background-color: lightgray; color: black; ">
+                    <p>LightGray</p>
+                </div>
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_names" class="try" target="_blank">Try it Yourself >></a>
+            <p>HTML supports <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank" style="color: white;">140 standard color names.</a></p>
+            <hr>
+            <h2>Background Color</h2>
+            <p>You can set the background color for HTML elements:</p>
+            <p style="font-size: 30px;background-color: rgb(0, 81, 255);text-align: center;">Hello World</p>
+            <p style="background-color: tomato;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    &lth1 style="background-color:DodgerBlue;">Hello World&lt/h1> <br>
+                    &ltp style="background-color:Tomato;">Lorem ipsum...&lt/p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_background" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <h2>Text Color</h2>
+            <p>You can set the color of text:</p>
+            <h3 style="color: red;">Hello World</h3>
+            <p style="color: blue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p style="color: rgb(6, 193, 6);">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    &lth1 style="color:Tomato;">Hello World&lt/h1> <br>
+                    &ltp style="color:DodgerBlue;">Lorem ipsum...&lt/p> <br>
+                    &ltp style="color:MediumSeaGreen;">Ut wisi enim...&lt/p>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_text" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <hr>
+            <h2>Border Colors</h2>
+            <p>You can set the color of borders:</p>
+            <h2 style="border: 1px solid red;">Hello World</h2>
+            <h2 style="border: 1px solid blue;">Hello World</h2>
+            <h2 style="border: 1px solid green;">Hello World</h2>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">
+                    &lth1 style="border:2px solid Tomato;">Hello World&lt/h1> <br>
+                    &lth1 style="border:2px solid DodgerBlue;">Hello World&lt/h1> <br>
+                    &lth1 style="border:2px solid Violet;">Hello World&lt/h1>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_border" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <h2>Color Values</h2>
+            <p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</p>
+            <p>The following three &ltdiv> elements have their background color set with RGB, HEX, and HSL values:</p>
+            <div style="font: 20px Consolas;background-color: rgb(255,99,71); margin: 10px 0;;text-align: center">rgb(255, 99, 71)</div>
+            <div style="font: 20px Consolas;background-color: #ff6347;margin: 10px 0;text-align: center">#ff6347</div>
+            <div style="font: 20px Consolas;background-color: hsl(9, 100%, 64%);margin: 10px 0;text-align: center">hsl(9, 100%, 64%)</div>
+            <p>The following two &ltdiv> elements have their background color set with RGBA and HSLA values, which add an Alpha channel to the color (here we have 50% transparency):</p>
+            <div style="font: 20px Consolas;background-color: rgba(255, 99, 71, 0.5);margin: 10px 0;text-align: center">rgba(255, 99, 71, 0.5)</div>
+            <div style="font: 20px Consolas;background-color: hsla(9, 100%, 64%, 0.5);margin: 10px 0;text-align: center;">hsla(9, 100%, 64%, 0.5)</div>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex">           
+                    &lth1 style="background-color:rgb(255, 99, 71);">...&lt/h1> <br>
+                    &lth1 style="background-color:#ff6347;">...&lt/h1> <br>
+                    &lth1 style="background-color:hsl(9, 100%, 64%);">...&lt/h1> <br>
+                    <br>
+                    &lth1 style="background-color:rgba(255, 99, 71, 0.5);">...&lt/h1> <br>
+                    &lth1 style="background-color:hsla(9, 100%, 64%, 0.5);">...&lt/h1> 
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_values" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <div style="display: inline-flex;">
+                <a href="HTML Comments.html" class="prevnext" style="margin-left: 10px;">&ltPrevious</a>
+                <a href="RGB.html" class="prevnext" style="margin-left:770px">Next></a>
+            </div>
         </div>
     </div>
+    <script src="work.js"></script>
 </body>
 </html>

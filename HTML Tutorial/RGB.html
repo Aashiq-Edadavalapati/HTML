@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RGB</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #colors{
+            display: flex;flex-wrap: wrap; justify-content: space-around;
+        }
+        #colors > div{
+            width: calc(50% - 10px);
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        #colors > div > h3{
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            #colors > div {
+                width: calc(100% - 10px); /* 50% width for each box on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="topnav">
@@ -109,6 +128,209 @@
             </ul>
         </div>
         <div class="content">
+            <h1>HTML RGB and RGBA Colors</h1>
+            <div style="display: inline-flex;">
+                <a href="HTML Colors.html" class="prevnext" style="margin-left: 10px;">&ltPrevious</a>
+                <a href="HEX.html" class="prevnext" style="margin-left:770px">Next></a>
+            </div>
+            <hr>
+            <p>An RGB color value represents RED, GREEN, and BLUE light sources.</p>
+            <p>An RGBA color value is an extension of RGB with an Alpha channel (opacity).</p>
+            <hr>
+            <h2>RGB Color Values</h2>
+            <p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+            <p><b>rgb(red, green, blue)</b></p>
+            <p>Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.</p>                
+            <p>This means that there are 256 x 256 x 256 = 16777216 possible colors!</p>                
+            <p>For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.</p>                
+            <p>Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the other two (red and blue) are set to 0.</p>
+            <p>To display black, set all color parameters to 0, like this: rgb(0, 0, 0).</p>                
+            <p>To display white, set all color parameters to 255, like this: rgb(255, 255, 255).</p>                
+            <p>Experiment by mixing the RGB values below:</p>
+            <div style="background-color: rgb(255, 99, 71);margin: auto;width: 35vw;height: 75px;margin-bottom: 20px;" id="background">
+                <h3 style="text-align: center;" id="backgroundtext">rgb(255, 99, 71)</h3>
+            </div>
+            <div style="display: flex;justify-content: space-around;">
+                <div>
+                    <p style="text-align: center;">RED</p><br>
+                    <input type="range" min="0" max="255" step="1" id="rinput" value="255"> <br>
+                    <p id="r" style="text-align: center;">255</p>
+                </div>
+                <div>
+                    <p style="text-align: center;">GREEN</p><br>
+                    <input type="range" min="0" max="255" step="1" id="ginput" value="99"> <br>
+                    <p id="g" style="text-align: center;">99</p>
+                </div>
+                <div>
+                    <p style="text-align: center;">BLUE</p><br>
+                    <input type="range" min="0" max="255" step="1" id="binput" value="71"> <br>
+                    <p id="b" style="text-align: center;">71</p>
+                </div>
+            </div>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex" id="colors" style="color: white;">
+                    <div style="text-align: center; background-color: rgb(255, 0, 0)">
+                        <h3><b>rgb(255,0,0)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(0,0,255); ">
+                        <h3><b>rgb(0,0,255)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(60,179,113); ">
+                        <h3><b>rgb(60,179,113)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(238,30,238); ">
+                        <h3><b>rgb(238,130,238)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(255,165,0); ">
+                        <h3><b>rgb(255,165,0)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(106,90,205); ">
+                        <h3><b>rgb(106,90,205)</b></h3>
+                    </div>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgb" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr><hr>
+            <h2>Shades of Gray</h2>
+            <p>Shades of gray are often designed using equal values for all three parameters.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex" id="colors" style="color: white;">
+                    <div style="text-align: center; background-color: rgb(60, 60, 60)">
+                        <h3><b>rgb(60,60,60)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(100,100,100); ">
+                        <h3><b>rgb(100,100,100)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(140,140,140); ">
+                        <h3><b>rgb(140,140,140)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(180,180,180); ">
+                        <h3><b>rgb(180,180,180)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(200,200,200); ">
+                        <h3 style="color: rgb(82, 82, 82);"><b>rgb(200,200,200)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(240,240,240); ">
+                        <h3 style="color: rgb(82, 82, 82);"><b>rgb(240,240,240)</b></h3>
+                    </div>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgb_gray" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <h2>RGBA Color Values</h2>
+            <p>RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.</p>
+            <p>An RGBA color value is specified with:</p>
+            <h3><b>rgba(red, green, blue, alpha)</b></h3>
+            <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+            <p>Experiment by mixing the RGBA values below:</p>
+            <div style="background-color: rgb(255, 99, 71);margin: auto;width: 35vw;height: 75px;margin-bottom: 20px;" id="background_rgba">
+                <h3 style="text-align: center;padding-top: 20px;" id="backgroundtext_rgba">rgba(255, 99, 71,0.5)</h3>
+            </div>
+            <div style="display: flex;justify-content: space-around;">
+                <div>
+                    <p style="text-align: center;">RED</p><br>
+                    <input type="range" min="0" max="255" step="1" id="redinput" value="255"> <br>
+                    <p id="red" style="text-align: center;">255</p>
+                </div>
+                <div>
+                    <p style="text-align: center;">GREEN</p><br>
+                    <input type="range" min="0" max="255" step="1" id="greeninput" value="99"> <br>
+                    <p id="green" style="text-align: center;">99</p>
+                </div>
+                <div>
+                    <p style="text-align: center;">BLUE</p><br>
+                    <input type="range" min="0" max="255" step="1" id="blueinput" value="71"> <br>
+                    <p id="blue" style="text-align: center;">71</p>
+                </div>
+                <div>
+                    <p style="text-align: center;">ALPHA</p><br>
+                    <input type="range" min="0" max="1" step="0.1" id="alphainput" value="71"> <br>
+                    <p id="alpha" style="text-align: center;">0.5</p>
+                </div>
+            </div>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="inex" id="colors" style="color: white;">
+                    <div style="text-align: center; background-color: rgba(255, 99, 71,0);color: gray;">
+                        <h3><b>rgba(255, 99, 71,0)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(255, 99, 71,0.2); color: gray;">
+                        <h3><b>rgba(255, 99, 71,0.2)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgba(255, 99, 71,0.4); ">
+                        <h3><b>rgba(255, 99, 71,0.4)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgba(255, 99, 71,0.6); ">
+                        <h3><b>rgba(255, 99, 71,0.6)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgb(255, 99, 71,0.8); ">
+                        <h3><b>rgba(255, 99, 71,0.8)</b></h3>
+                    </div>
+                    <div style="text-align: center; background-color: rgba(255, 99, 71,1); ">
+                        <h3><b>rgba(255, 99, 71,1)</b></h3>
+                    </div>
+                </div>
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgba" class="try" target="_blank">Try it Yourself >></a>
+            </div>
+            <hr>
+            <div style="display: inline-flex;">
+                <a href="HTML Colors.html" class="prevnext" style="margin-left: 10px;">&ltPrevious</a>
+                <a href="HEX.html" class="prevnext" style="margin-left:770px">Next></a>
+            </div>
+
+            <script>
+                let red = document.getElementById("rinput");
+                let green = document.getElementById("ginput");
+                let blue = document.getElementById("binput");
+                let divColor = document.getElementById("background");
+                let divText = document.getElementById("backgroundtext");
+
+                
+                let $red = document.getElementById("redinput");
+                let $green = document.getElementById("greeninput");
+                let $blue = document.getElementById("blueinput");
+                let $alpha = document.getElementById("alphainput");
+                let $divColor = document.getElementById("background_rgba");
+                let $divText = document.getElementById("backgroundtext_rgba");
+                
+                function updateColor() {
+                    let rval = red.value;
+                    let gval = green.value;
+                    let bval = blue.value;
+
+                    let redval = $red.value;
+                    let greenval = $green.value;
+                    let blueval = $blue.value;
+                    let alphaval = $alpha.value
+
+                    document.getElementById("r").textContent = rval;
+                    document.getElementById("g").textContent = gval;
+                    document.getElementById("b").textContent = bval;
+
+                    document.getElementById("red").textContent = redval;
+                    document.getElementById("green").textContent = greenval;
+                    document.getElementById("blue").textContent = blueval;
+                    document.getElementById("alpha").textContent = alphaval;
+
+                    divColor.style.backgroundColor = `rgb(${rval},${gval},${bval})`;
+                    divText.textContent = `rgb(${rval},${gval},${bval})`;
+                    $divColor.style.backgroundColor = `rgba(${redval},${greenval},${blueval},${alphaval})`;
+                    $divText.textContent = `rgba(${redval},${greenval},${blueval},${alphaval})`;
+                }
+                
+                red.addEventListener('input',updateColor);
+                green.addEventListener('input',updateColor);
+                blue.addEventListener('input',updateColor);
+
+                $red.addEventListener('input',updateColor);
+                $green.addEventListener('input',updateColor);
+                $blue.addEventListener('input',updateColor);
+                $alpha.addEventListener('input',updateColor);
+
+            </script>
+            <script src="work.js"></script>
         </div>
     </div>
 </body>
